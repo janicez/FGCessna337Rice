@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<piston_engine name="Continental _TSIO-360-G">
+	<minmp unit="INHG">		   15.0  </minmp>
+	<maxmp unit="INHG">		   25.0  </maxmp>
+	<displacement unit="IN3"> 360.0  </displacement>
+	<bore unit="IN">			4.438</bore>
+	<stroke unit="IN">			3.875</stroke>
+	<cylinders>					6.0  </cylinders>
+	<compression-ratio>			7.5  </compression-ratio>
+	<maxhp> 				  210.0  </maxhp>
+	<cycles>				  4.0  </cycles>
+	<idlerpm>				  603.0  </idlerpm>
+	<maxrpm>				 2500.0  </maxrpm>
+	<sparkfaildrop>				0.1  </sparkfaildrop>
+	<volumetric-efficiency>		1.03 </volumetric-efficiency>
+	<air-intake-impedance-factor>0.45</air-intake-impedance-factor>
+	<numboostspeeds>1</numboostspeeds>
+	<boost-loss-factor>0.7</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
+	<ratedboost1>         3 </ratedboost1>
+	<ratedpower1>       210 </ratedpower1>
+	<ratedrpm1>        2460 </ratedrpm1>
+	<ratedaltitude1>   6700 </ratedaltitude1>
+	<man-press-lag>     1.5 </man-press-lag> <!-- to simulate turbo lag -->
+	<boostmanual>         0 </boostmanual>
+	<!-- Optional items that affect engine performance -->
+	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
+	<bsfc>						0.34</bsfc>
+	<!-- <bsfc>						0.326</bsfc> -->
+</piston_engine>
