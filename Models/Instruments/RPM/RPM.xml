@@ -20,7 +20,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>Needle_FRONT</object-name>
-	<property>/engines/engine[0]/rpm</property>
+	<property>/fdm/jsbsim/propulsion/engine[0]/propeller-rpm</property>
 	<interpolation>
 		<entry><ind>   0</ind><dep>   0</dep></entry>
 		<entry><ind> 500</ind><dep>   1</dep></entry>
@@ -43,7 +43,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>Needle_REAR</object-name>
-	<property>/engines/engine[1]/rpm</property>
+	<property>/fdm/jsbsim/propulsion/engine[1]/propeller-rpm</property>
 	<interpolation>
 		<entry><ind>   0</ind><dep>   0</dep></entry>
 		<entry><ind> 500</ind><dep>  -1</dep></entry>
