@@ -16,7 +16,7 @@
 	<volumetric-efficiency>		1.03 </volumetric-efficiency>
 	<air-intake-impedance-factor>0.45</air-intake-impedance-factor>
 	<numboostspeeds>1</numboostspeeds>
-	<boost-loss-factor>0.7</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
+	<boost-loss-factor>0.9</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
 	<ratedboost1>         3 </ratedboost1>
 	<ratedpower1>       210 </ratedpower1>
 	<ratedrpm1>        2460 </ratedrpm1>

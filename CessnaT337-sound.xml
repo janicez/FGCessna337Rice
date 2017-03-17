@@ -56,7 +56,7 @@
 	<engine>
 		<name>engine-external-1</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A.wav</path>
 		<position>
 			<x>-1.8</x>
 			<y> 0  </y>
@@ -77,17 +77,141 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[0]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
+		</pitch>
+	</engine>
+
+	<engine>
+		<name>turbocharger-external-1</name>
+		<mode>looped</mode>
+		<path>Aircraft/Cessna337/Sounds/eng-ext.wav</path>
+		<position>
+			<x>-1.8</x>
+			<y> 0  </y>
+			<z> 0  </z>
+		</position>
+		<condition>
+			<property>engines/engine[0]/running</property>
+			<not>
+				<property>/sim/current-view/internal</property>
+			</not>
+		</condition>
+		<volume>
+			<property>engines/engine[0]/mp-osi</property>
+			<factor>0.0144</factor>
+			<min>0.03</min>
+			<max>0.4</max>
+			<offset>0.03</offset>
+		</volume>
+		<pitch>
+			<property>engines/engine[0]/rpm</property>
+			<factor>0.0005</factor>
+			<min>1</min>
+			<max>20.0</max>
+			<offset>1</offset>
+		</pitch>
+	</engine>
+
+	<engine>
+		<name>turbocharger-internal-1</name>
+		<mode>looped</mode>
+		<path>Aircraft/Cessna337/Sounds/eng-int.wav</path>
+		<position>
+			<x>-1.8</x>
+			<y> 0  </y>
+			<z> 0  </z>
+		</position>
+		<condition>
+			<and>
+				<property>engines/engine[0]/running</property>
+				<property>/sim/current-view/internal</property>
+			</and>
+		</condition>
+		<volume>
+			<property>engines/engine[0]/mp-osi</property>
+			<factor>0.0144</factor>
+			<min>0.02</min>
+			<max>8</max>
+			<offset>0.02</offset>
+		</volume>
+		<pitch>
+			<property>engines/engine[0]/rpm</property>
+			<factor>0.0005</factor>
+			<min>1</min>
+			<max>20.0</max>
+			<offset>1</offset>
+		</pitch>
+	</engine>
+
+	<engine>
+		<name>turbocharger-external-2</name>
+		<mode>looped</mode>
+		<path>Aircraft/Cessna337/Sounds/eng-ext.wav</path>
+		<position>
+			<x> 2.3</x>
+			<y> 0  </y>
+			<z> 0.3</z>
+		</position>
+		<condition>
+			<property>engines/engine[1]/running</property>
+			<not>
+				<property>/sim/current-view/internal</property>
+			</not>
+		</condition>
+		<volume>
+			<property>engines/engine[1]/mp-osi</property>
+			<factor>0.0072</factor>
+			<min>0.015</min>
+			<max>1</max>
+			<offset>0.015</offset>
+		</volume>
+		<pitch>
+			<property>engines/engine[1]/rpm</property>
+			<factor>0.0005</factor>
+			<min>1</min>
+			<max>20</max>
+			<offset>1</offset>
+		</pitch>
+	</engine>
+
+	<engine>
+		<name>turbocharger-internal-2</name>
+		<mode>looped</mode>
+		<path>Aircraft/Cessna337/Sounds/eng-int.wav</path>
+		<position>
+			<x> 2.3</x>
+			<y> 0  </y>
+			<z> 0.3</z>
+		</position>
+		<condition>
+			<and>
+				<property>engines/engine[1]/running</property>
+				<property>/sim/current-view/internal</property>
+			</and>
+		</condition>
+		<volume>
+			<property>engines/engine[1]/mp-osi</property>
+			<factor>0.0144</factor>
+			<min>0.02</min>
+			<max>1</max>
+			<offset>0.02</offset>
+		</volume>
+		<pitch>
+			<property>engines/engine[1]/rpm</property>
+			<factor>0.0005</factor>
+			<min>1</min>
+			<max>20.0</max>
+			<offset>1</offset>
 		</pitch>
 	</engine>
 
 	<engine>
 		<name>engine-internal-1</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar-lpf.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A-LPF.wav</path>
 		<condition>
 			<and>
 				<property>engines/engine[0]/running</property>
@@ -108,9 +232,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[0]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -166,7 +290,7 @@
 	<engine>
 		<name>engine-external-2</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A.wav</path>
 		<position>
 			<x>2.3</x>
 			<y>0  </y>
@@ -187,9 +311,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[1]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -197,7 +321,7 @@
 	<engine>
 		<name>engine-internal-2</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar-lpf.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A-LPF.wav</path>
 		<condition>
 			<and>
 				<property>engines/engine[1]/running</property>
@@ -218,9 +342,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[1]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>

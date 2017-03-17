@@ -19,12 +19,12 @@
   <ixx>					3.43 </ixx>
   <diameter unit="IN"> 76.0  </diameter>
   <numblades>			2    </numblades>
-  <gearratio>			1.3</gearratio> <!-- riced final drive ratio -->
+  <gearratio>			1.1</gearratio> <!-- riced final drive ratio -->
   <p_factor>			6.00 </p_factor>
   <minpitch>		   20    </minpitch>
-  <maxpitch>		   35    </maxpitch>
-  <minrpm>			 2000    </minrpm>
-  <maxrpm>			 3400    </maxrpm>
+  <maxpitch>		   58    </maxpitch>
+  <minrpm>			  600    </minrpm>
+  <maxrpm>			 2990    </maxrpm>
   <constspeed>			1    </constspeed>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->

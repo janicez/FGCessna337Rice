@@ -1,30 +1,33 @@
 <?xml version="1.0"?>
 
 <piston_engine name="Continental _TSIO-360-G with an owner who's put a bigger turbo on it">
-	<minmp unit="INHG">		   15.0  </minmp>
-	<maxmp unit="INHG">		   25.0  </maxmp>
+	<minmp unit="INHG">		    4.5  </minmp>
+	<maxmp unit="INHG">		   28.5  </maxmp>
 	<displacement unit="IN3"> 360.0  </displacement>
 	<bore unit="IN">			4.438</bore>
 	<stroke unit="IN">			3.875</stroke>
 	<cylinders>					6.0  </cylinders>
-	<compression-ratio>			7.5  </compression-ratio>
+	<compression-ratio>			 9  </compression-ratio>
 	<maxhp> 				  235.0  </maxhp>
-	<cycles>				  4.0  </cycles>
+	<cycles>				   4.0  </cycles>
 	<idlerpm>				  603.0  </idlerpm>
-	<maxrpm>				 2650.0  </maxrpm>
+	<maxrpm>				 3150.0  </maxrpm>
 	<sparkfaildrop>				0.1  </sparkfaildrop>
 	<volumetric-efficiency>		1.05 </volumetric-efficiency>
-	<air-intake-impedance-factor>0.45</air-intake-impedance-factor>
-	<numboostspeeds>1</numboostspeeds>
-	<boost-loss-factor>0.7</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
-	<ratedboost1>        22 </ratedboost1>
+	<air-intake-impedance-factor>0.25</air-intake-impedance-factor>
+	<numboostspeeds>2</numboostspeeds>
+	<boost-loss-factor>0.6</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
+	<ratedboost1>        12 </ratedboost1>
 	<ratedpower1>       210 </ratedpower1>
-	<ratedrpm1>        2750 </ratedrpm1>
-	<ratedaltitude1>   3500 </ratedaltitude1>
-	<man-press-lag>     2.8 </man-press-lag> <!-- to simulate turbo lag -->
+	<ratedrpm1>        3150 </ratedrpm1>
+	<ratedaltitude1>   5000 </ratedaltitude1>
+	<ratedboost2>       9.5 </ratedboost2>
+	<ratedpower2>       210 </ratedpower2>
+	<ratedrpm2>        3150 </ratedrpm2>
+	<ratedaltitude2>  21000 </ratedaltitude2>
+	<man-press-lag>     0.2 </man-press-lag> <!-- to simulate turbo lag -->
 	<boostmanual>         0 </boostmanual>
 	<!-- Optional items that affect engine performance -->
 	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
-	<bsfc>						0.34</bsfc>
-	<!-- <bsfc>						0.326</bsfc> -->
+	<bsfc>						0.37</bsfc>
 </piston_engine>

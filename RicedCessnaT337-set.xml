@@ -144,7 +144,7 @@
 	</gui>
 
 	<sound>
-		<path>Aircraft/Cessna337/Cessna337-sound.xml</path>
+		<path>Aircraft/Cessna337/CessnaT337-sound.xml</path>
 	</sound>
   
 	<model>
