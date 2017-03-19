@@ -7,7 +7,7 @@
 	<bore unit="IN">			4.438</bore>
 	<stroke unit="IN">			3.875</stroke>
 	<cylinders>					6.0  </cylinders>
-	<compression-ratio>			 9  </compression-ratio>
+	<compression-ratio>			 7.5  </compression-ratio>
 	<maxhp> 				  235.0  </maxhp>
 	<cycles>				   4.0  </cycles>
 	<idlerpm>				  603.0  </idlerpm>
@@ -17,11 +17,11 @@
 	<air-intake-impedance-factor>0.25</air-intake-impedance-factor>
 	<numboostspeeds>2</numboostspeeds>
 	<boost-loss-factor>0.6</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
-	<ratedboost1>        12 </ratedboost1>
+	<ratedboost1>        15 </ratedboost1>
 	<ratedpower1>       210 </ratedpower1>
 	<ratedrpm1>        3150 </ratedrpm1>
 	<ratedaltitude1>   5000 </ratedaltitude1>
-	<ratedboost2>       9.5 </ratedboost2>
+	<ratedboost2>        11 </ratedboost2>
 	<ratedpower2>       210 </ratedpower2>
 	<ratedrpm2>        3150 </ratedrpm2>
 	<ratedaltitude2>  21000 </ratedaltitude2>

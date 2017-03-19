@@ -17,7 +17,7 @@
 	<aero>CessnaT337-JSBSim</aero>
         
 	<model>
-		<path archive="y">Aircraft/Cessna337/Models/Cessna337-MP-PSI.xml</path>
+		<path>Aircraft/Cessna337/Models/Cessna337.xml</path>
 	</model>
 
 	<!-- Configuracion de la vista del piloto -->

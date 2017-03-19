@@ -2,7 +2,6 @@
 
 <!--
     Copyright (C) 2010  Fernando Espinosa
-    Modified 2016 by Ellenor Malik to include manifold pressure in lb/in²
 
 This program is free software; you can redistribute it and/or modify 
 it under the terms of the GNU General Public License as published by 
@@ -26,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
 	<!-- INSTRUMENTS -->
 
 <model>
-	<path>Aircraft/Cessna337/Models/Cessna337-psi-instruments.xml</path>
+	<path>Aircraft/Cessna337/Models/Cessna337-instruments.xml</path>
 </model>
 
 	<!-- SEATS -->
