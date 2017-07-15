@@ -18,14 +18,14 @@
 <propeller name="prop">
   <ixx>					3.44 </ixx>
   <diameter unit="IN"> 76.0  </diameter>
-  <numblades>			2  </numblades> <!-- The pentastar redlines at 6.4kRPM - 5.8kRPM is a reasonable "max power RPM". The horsepower is MUCH higher on it at that RPM so
+  <numblades>			5  </numblades> <!-- The pentastar redlines at 6.4kRPM - 5.8kRPM is a reasonable "max power RPM". The horsepower is MUCH higher on it at that RPM so
   a 3 bladed prop is reasonable. I rescind my rescission of that. ~~ c-eytt-->
-  <gearratio>			2.5</gearratio> <!-- Mother of god, why did you choose to put a PENTASTAR 3.6 where the goddamned 5.9 belongs? You need a crazy ratio on that. ~~ ellenor C-EYTT -->
+  <gearratio>			5</gearratio> <!-- Mother of god, why did you choose to put a PENTASTAR 3.6 where the goddamned 5.9 belongs? You need a crazy ratio on that. ~~ ellenor C-EYTT -->
   <p_factor>			6.00 </p_factor>
-  <minpitch>		   20    </minpitch>
-  <maxpitch>		   55    </maxpitch>
+  <minpitch>		   10    </minpitch>
+  <maxpitch>		   45    </maxpitch>
   <minrpm>			  200    </minrpm>
-  <maxrpm>			 7500    </maxrpm>
+  <maxrpm>			 3100    </maxrpm>
   <constspeed>			1    </constspeed>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->

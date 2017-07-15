@@ -4,20 +4,20 @@
 
 <sim>
 	<author>Fernando Espinosa, Pavel Cueto, with minor tweaks to simulate turbocharging by Ellenor Malik legal name Jack Johnson</author>
-	<description>Cessna T337G Skymaster - riced with semi-fictional engine</description>
+	<description>Cessna 337G Skymaster turboprop maybe</description>
 	<aircraft-version>v20161212</aircraft-version>
 	<rating>
-		<FDM type="int">1</FDM>
+		<FDM type="int">2</FDM>
 		<systems type="int">3</systems>
 		<cockpit type="int">5</cockpit>
 		<model type="int">5</model>
 	</rating>
 	<status>beta</status>
 	<flight-model>jsb</flight-model>
-	<aero>OverpoweredCessnaT337-JSBSim</aero>
+	<aero>CessnaJP337-JSBSim</aero>
         
 	<model>
-		<path archive="y">Aircraft/Cessna337/Models/Cessna337.xml</path>
+		<path>Aircraft/Cessna337/Models/Cessna337TP.xml</path>
 	</model>
 
 	<!-- Configuracion de la vista del piloto -->
@@ -29,7 +29,7 @@
 			<y-offset-m archive="y"> 0.372</y-offset-m>  <!-- Altura -->
 			<z-offset-m archive="y">-0.160</z-offset-m>  <!-- Profundidad -->
 			<pitch-offset-deg>-8</pitch-offset-deg>
-			<default-field-of-view-deg type="double">71.0</default-field-of-view-deg>
+			<default-field-of-view-deg type="double">60.0</default-field-of-view-deg>
 			<limits>
 				<enabled type="bool">true</enabled>
 				<left>
@@ -144,7 +144,7 @@
 	</gui>
 
 	<sound>
-		<path>Aircraft/Cessna337/CessnaT337-sound.xml</path>
+		<path>Aircraft/Cessna337/CessnaJP337-sound.xml</path>
 	</sound>
   
 	<model>
@@ -161,13 +161,13 @@
 	<help include="Dialogs/Cessna337-help.xml"/>
 
 	<systems>
-		<path>Aircraft/Cessna337/Systems/Cessna337-systems.xml</path>
+		<path>Aircraft/Cessna337/Systems/CessnaJP337-systems.xml</path>
         <autopilot>
             <path>Aircraft/Cessna337/Systems/Cessna337-autopilot.xml</path>
         </autopilot>
 		<property-rule n="100">
 			<name>Instrument-Filter</name>
-			<path>Aircraft/Cessna337/Systems/Cessna337-filters.xml</path>
+			<path>Aircraft/Cessna337/Systems/CessnaJP337-filters.xml</path>
 		</property-rule>
 	</systems>
 
@@ -215,14 +215,12 @@
 <controls>
 	<engines>
 		<engine n="0">
-			<cowl-flaps-norm>0</cowl-flaps-norm>
 			<master-bat>false</master-bat>
 			<master-alt>false</master-alt>
 			<primer type="bool">false</primer>
 			<fuel-pump type="bool">false</fuel-pump>
 		</engine>
 		<engine n="1">
-			<cowl-flaps-norm>0</cowl-flaps-norm>
 			<!-- <master-bat>false</master-bat> -->
 			<master-alt>false</master-alt>
 			<primer type="bool">false</primer>
@@ -368,23 +366,13 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-				if(getprop("controls/engines/engine[0]/cowl-flaps-norm") > 0) {
-					interpolate("controls/engines/engine[0]/cowl-flaps-norm", 0, 1);
+				if(getprop("controls/engines/engine[0]/cutoff") > 0) {
+					interpolate("controls/engines/engine[0]/cutoff", 0, 1);
 					} else {
-					interpolate("controls/engines/engine[0]/cowl-flaps-norm", 1, 1);
+					interpolate("controls/engines/engine[0]/cutoff", 1, 1);
 				}
 				</script>
 			</binding>
-			<mod-super><binding>
-				<command>nasal</command>
-				<script>
-				if(getprop("fdm/jsbsim/propulsion/engine[0]/boost-speed") > 0) {
-					interpolate("fdm/jsbsim/propulsion/engine[0]/boost-speed", 0, 1);
-					} else {
-					interpolate("fdm/jsbsim/propulsion/engine[0]/boost-speed", 1, 1);
-				}
-				</script>
-			</binding></mod-super>
 		</key> 
 
 		<key n="67">
@@ -393,23 +381,13 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-				if(getprop("controls/engines/engine[1]/cowl-flaps-norm") > 0) {
-					interpolate("controls/engines/engine[1]/cowl-flaps-norm", 0, 1);
+				if(getprop("controls/engines/engine[1]/cutoff") > 0) {
+					interpolate("controls/engines/engine[1]/cutoff", 0, 1);
 					} else {
-					interpolate("controls/engines/engine[1]/cowl-flaps-norm", 1, 1);
+					interpolate("controls/engines/engine[1]/cutoff", 1, 1);
 				}
 				</script>
 			</binding>
-			<mod-super><binding>
-				<command>nasal</command>
-				<script>
-				if(getprop("fdm/jsbsim/propulsion/engine[1]/boost-speed") > 0) {
-					interpolate("fdm/jsbsim/propulsion/engine[1]/boost-speed", 0, 1);
-					} else {
-					interpolate("fdm/jsbsim/propulsion/engine[1]/boost-speed", 1, 1);
-				}
-				</script>
-			</binding></mod-super>
 		</key>       
 	</keyboard>
 </input>
