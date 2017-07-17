@@ -11,8 +11,8 @@
   <startern1>40</startern1>
   <ielumaxtorque unit="FT*LB">800</ielumaxtorque>
   <itt_delay>0.15</itt_delay>
-  <betarangeend>40</betarangeend>
-  <reversemaxpower>60</reversemaxpower>
+  <betarangeend>50</betarangeend>
+  <reversemaxpower>105</reversemaxpower>
 
   <table name="EnginePowerVC">
     <description> Engine power, function of airspeed and pressure </description>

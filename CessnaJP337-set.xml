@@ -360,6 +360,19 @@
 			</binding>
 		</key>
 
+            <key n="127">
+                <name>Delete</name>
+                <desc>Toggle beta-range</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[0]/reverser</property>
+                </binding>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[1]/reverser</property>
+                </binding>
+            </key>
+
 		<key n="99">
 			<name>c</name>
 			<desc>Open/Close_Cowl_Flaps_Del</desc>

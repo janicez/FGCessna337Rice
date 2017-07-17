@@ -23,7 +23,7 @@
   <p_factor>			6.00 </p_factor>
   <minpitch>		   10    </minpitch>
   <maxpitch>		   65    </maxpitch>
-  <reversepitch>		   65    </reversepitch>
+  <reversepitch>		   -35    </reversepitch>
   <minrpm>			  400    </minrpm>
   <maxrpm>			 2850    </maxrpm>
   <constspeed>			1    </constspeed>
