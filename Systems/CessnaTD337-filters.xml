@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<filter>
+		<name>Suction indicator</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<expression>
+				<max>
+					<property>/systems/vacuum[0]/suction-inhg</property>
+					<property>/systems/vacuum[1]/suction-inhg</property>
+				</max>
+			</expression>
+		</input>
+		<output>/instrumentation/vacuum/suction-inhg</output>
+	</filter>
+
+	<filter>
+		<name>Front throttle as mixture</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/controls/engines/engine[0]/throttle</property>
+		</input>
+		<output>/controls/engines/engine[0]/mixture</output>
+	</filter>
+
+	<filter>
+		<name>Rear throttle as mixture</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/controls/engines/engine[1]/throttle</property>
+		</input>
+		<output>/controls/engines/engine[1]/mixture</output>
+	</filter>
+
+
+
+	<filter>
+		<name>Battery</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/controls/engines/engine[0]/master-bat</property>
+		</input>
+		<output>/controls/electric/battery-switch</output>
+	</filter>
+
+
+	<filter>
+		<name>Alt f</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/controls/engines/engine[0]/master-alt</property>
+		</input>
+		<output>/controls/electric/engine[0]/generator</output>
+	</filter>
+
+	<filter>
+		<name>Alt r</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/controls/engines/engine[1]/master-alt</property>
+		</input>
+		<output>/controls/electric/engine[1]/generator</output>
+	</filter>
+
+	<logic>
+		<name>Front Suction annunciator</name>
+		<input>
+			<less-than>
+				<property>/systems/vacuum[0]/suction-inhg</property>
+				<value type="double">3.5</value>
+			</less-than>
+		</input>
+		<output>/instrumentation/vacuum/inoperative[0]</output>
+	</logic>
+
+	<logic>
+	<name>Rear Suction annunciator</name>
+	<input>
+		<less-than>
+			<property>/systems/vacuum[1]/suction-inhg</property>
+			<value type="double">3.5</value>
+		</less-than>
+	</input>
+	<output>/instrumentation/vacuum/inoperative[1]</output>
+</logic>
+
+</PropertyList>

@@ -3,15 +3,15 @@
 <turboprop_engine name="PT6A-67D Derate">
   <milthrust unit="LBS">2400</milthrust>
   <idlen1>33.0</idlen1>
-  <maxn1>104.0</maxn1>
-  <maxpower unit="HP">480</maxpower>
+  <maxn1>115.0</maxn1>
+  <maxpower unit="HP">470</maxpower>
   <psfc unit="LBS/HR/HP">0.43</psfc>
   <n1idle_max_delay>2</n1idle_max_delay>
   <maxstartingtime>1</maxstartingtime>
   <startern1>40</startern1>
   <ielumaxtorque unit="FT*LB">800</ielumaxtorque>
   <itt_delay>0.15</itt_delay>
-  <betarangeend>50</betarangeend>
+  <betarangeend>40</betarangeend>
   <reversemaxpower>105</reversemaxpower>
 
   <table name="EnginePowerVC">
@@ -35,13 +35,13 @@
   <table name="EnginePowerRPM_N1" type="internal">
     <description> Engine Power, function of RPM and N1 </description>
     <tableData>
-	0	5	35	70	80	90	104
-0	.00	.50	.50	.50	.50	.50	.50
-500	.00	.50	9.81	99.05	176.11	205.48	220.85
-1600	.00	.50	11.00	100.80	180.00	250.00	300.64
-1900	.00	.50	14.00	140.88	190.00	310.00	388.60
-2150	.00	.50	15.00	155.0	276.88	350.00	405.80
-3150	.00	.50	17.00	170.00	350.00	461.00	468.00
+	0	5	35	70	88	94	100	115
+0	.00	.50	.50	.50	.50	.50	.50	.50
+500	.00	.50	9.81	99.05	76.11	105.48	185.80	220.0
+1600	.00	.50	11.00	50.80	90.00	150.00	290.64	340.0
+1900	.00	.50	14.00	79.88	140.00	210.00	310.60	380.0
+2150	.00	.50	15.00	125.0	250.88	290.00	350.80	422.0
+3150	.00	.50	17.00	170.00	350.00	400.00	430.00	472.0
 
     </tableData>
   </table>
@@ -57,12 +57,15 @@
     </tableData>
   </table>
 
-<!--
   <table name="CombustionEfficiency_N1" type="internal">
     <tableData>
-
+	035	0.40
+	070	0.823
+	088	0.899
+	094	0.92
+	100	1.00
+	120	0.77
      </tableData>
   </table>
--->
 
 </turboprop_engine>

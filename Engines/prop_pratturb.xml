@@ -18,14 +18,14 @@
 <propeller name="prop">
   <ixx>					3.43 </ixx>
   <diameter unit="IN"> 77.0  </diameter>
-  <numblades>			4    </numblades>
-  <gearratio>			1</gearratio> <!-- riced final drive ratio -->
-  <p_factor>			6.00 </p_factor>
+  <numblades>			9    </numblades>
+  <gearratio>			1.5</gearratio> <!-- riced final drive ratio -->
+  <p_factor>			8.00 </p_factor>
   <minpitch>		   10    </minpitch>
-  <maxpitch>		   65    </maxpitch>
-  <reversepitch>		   -35    </reversepitch>
-  <minrpm>			  400    </minrpm>
-  <maxrpm>			 2850    </maxrpm>
+  <maxpitch>		   73    </maxpitch>
+  <reversepitch>		  -25    </reversepitch>
+  <minrpm>			 1100    </minrpm>
+  <maxrpm>			 2860    </maxrpm>
   <constspeed>			1    </constspeed>
 
 
