@@ -56,7 +56,7 @@
 	<engine>
 		<name>engine-external-1</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A.wav</path>
 		<position>
 			<x>-1.8</x>
 			<y> 0  </y>
@@ -77,9 +77,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[0]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -87,7 +87,7 @@
 	<engine>
 		<name>engine-internal-1</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar-lpf.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A-LPF.wav</path>
 		<condition>
 			<and>
 				<property>engines/engine[0]/running</property>
@@ -108,9 +108,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[0]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -166,7 +166,7 @@
 	<engine>
 		<name>engine-external-2</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A.wav</path>
 		<position>
 			<x>2.3</x>
 			<y>0  </y>
@@ -187,9 +187,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[1]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -197,7 +197,7 @@
 	<engine>
 		<name>engine-internal-2</name>
 		<mode>looped</mode>
-		<path>Aircraft/Cessna337/Sounds/Engine_pentastar-lpf.wav</path>
+		<path>Aircraft/Cessna337/Sounds/Engine_Continental-O200A-LPF.wav</path>
 		<condition>
 			<and>
 				<property>engines/engine[1]/running</property>
@@ -218,9 +218,9 @@
 		</volume>
 		<pitch>
 			<property>engines/engine[1]/rpm</property>
-			<factor>0.0008</factor>
+			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>24</max>
+			<max>2.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>

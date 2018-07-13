@@ -36,13 +36,13 @@
    <wingarea  unit="FT2">  201.31 </wingarea>
    <wingspan  unit="FT" >   37.99 </wingspan>
    <wing_incidence>          2.00 </wing_incidence>
-   <chord     unit="FT" >    5.75 </chord> <!-- the slightest increase in taper -->
+   <chord     unit="FT" >    6.30 </chord>
    <htailarea unit="FT2">   32.21 </htailarea>
    <htailarm  unit="FT" >   15.47 </htailarm>
    <vtailarea unit="FT2">   20.13 </vtailarea>
    <vtailarm  unit="FT" >   14.88 </vtailarm>
    <location name="AERORP" unit="M">
-     <x> 0.391881</x> <!-- <x> 0.583126</x> -->    
+     <x> 0.381881</x> <!-- <x> 0.583126</x> -->    
      <y> 0.00    </y>
      <z>-0.125318</z>          
    </location>
@@ -62,9 +62,9 @@
    <ixx unit="SLUG*FT2">      2206 </ixx>
    <iyy unit="SLUG*FT2">      2406 </iyy>
    <izz unit="SLUG*FT2">      4244 </izz>
-   <emptywt unit="LBS" >      2800 </emptywt> <!-- extra pounds added by larger engines -->
+   <emptywt unit="LBS" >      2600 </emptywt>
    <location name="CG" unit="M">
-     <x> 0.390881</x>
+     <x> 0.381881</x>
      <y> 0.00    </y>
      <z>-0.125318</z>
    </location> 
@@ -259,81 +259,43 @@
  <propulsion>
  	
 <!-- Delantero -->
-<engine file="engine_GM380inSBV8">
+<engine file="PT6A67F">
 	<location unit="M">
 		<x>-1.85601 </x>
 		<y> 0.00    </y>
 		<z>-0.069293</z>
 	</location>
 	<orient unit="DEG">
-		<pitch>-3</pitch> 
+		<pitch> 0</pitch> 
 		<roll>  0</roll> 
 		<yaw>   0</yaw> 
 	</orient>
 	<feed>0</feed>
-	<thruster file="prop_IO360Criced">
+	<thruster file="averystrangeprop">
 		<location unit="M">
 			<x>-2.52872</x>
 			<y> 0.00 </y>
 			<z>-0.089188</z>
 		</location>
 		<orient unit="DEG">
-			<pitch>-3</pitch>
+			<pitch> 0</pitch>
 			<roll>  0</roll>
 			<yaw>   0</yaw>
 		</orient>
 		<sense>1</sense>
 	</thruster>
 </engine> 
-
-<!-- Trasero -->
-   <engine file="engine_GM380inSBV8">
-   	<location unit="M">
-      <x>2.31968</x>
-      <y> 0.00 </y>
-      <z>0.290422</z>
-    </location>
-    <orient unit="DEG">
-      <pitch>0</pitch>
-      <roll> 0</roll>
-      <yaw>180</yaw>
-    </orient>
-    <feed>1</feed>
-    <thruster file="prop_IO360Criced">
-    <location unit="M">
-      <x>2.85175</x>
-      <y> 0.00 </y>
-      <z>0.298886</z>
-    </location>
-    <orient unit="DEG">
-       <pitch>0</pitch>
-       <roll> 0</roll>
-       <yaw>  0</yaw>
-     </orient>
-		<sense>-1</sense>
-    </thruster>
-  </engine>
   
 <!-- Tanques de combustible ** Combustible Avgas peso 6.02 lb por galon -->
 <!-- Dos tanques de combustible de 75-galones cada uno -->
 	<tank type="FUEL" number="0">
 		<location unit="M">
 			<x> 0.387413</x>
-			<y>-0.973096</y>
+			<y>-0</y>
 			<z> 0.552551</z>
 		</location>
-		<capacity unit="LBS"> 451.50 </capacity>
-		<contents unit="LBS"> 225.00 </contents>
-	</tank>
-
-	<tank type="FUEL" number="1">
-		<location unit="M">
-			<x> 0.387413</x>
-			<y> 0.973096</y>
-			<z> 0.552551</z>
-		</location>
-		<capacity unit="LBS"> 451.50 </capacity>
-		<contents unit="LBS"> 225.00 </contents>
+		<capacity unit="LBS"> 800.50 </capacity>
+		<contents unit="LBS"> 450.00 </contents>
 	</tank>
 </propulsion>
  
@@ -552,7 +514,7 @@
        </domain>
        <range>
           <min>0.48</min>
-          <max>0.99</max>
+          <max>0.75</max>
        </range>
      <output>propulsion/engine[0]/cooling-factor</output>
      </aerosurface_scale>
@@ -581,7 +543,7 @@
        </domain>
        <range>
           <min>0.48</min>
-          <max>0.99</max>
+          <max>0.75</max>
        </range>
      <output>propulsion/engine[1]/cooling-factor</output>
      </aerosurface_scale>

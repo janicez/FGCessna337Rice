@@ -33,18 +33,18 @@
 
               <!-- Medidas y pesos -->
  <metrics>
-   <wingarea  unit="FT2">  201.31 </wingarea>
-   <wingspan  unit="FT" >   37.99 </wingspan>
-   <wing_incidence>          2.00 </wing_incidence>
-   <chord     unit="FT" >    5.75 </chord> <!-- the slightest increase in taper -->
+   <wingarea  unit="FT2">  200    </wingarea>
+   <wingspan  unit="FT" >   30    </wingspan>
+   <wing_incidence>         0.00 </wing_incidence>
+   <chord     unit="FT" >   8    </chord>
    <htailarea unit="FT2">   32.21 </htailarea>
    <htailarm  unit="FT" >   15.47 </htailarm>
    <vtailarea unit="FT2">   20.13 </vtailarea>
    <vtailarm  unit="FT" >   14.88 </vtailarm>
    <location name="AERORP" unit="M">
-     <x> 0.391881</x> <!-- <x> 0.583126</x> -->    
+     <x> 1.001881</x> <!-- <x> 0.583126</x> -->    
      <y> 0.00    </y>
-     <z>-0.125318</z>          
+     <z>-0.025318</z>          
    </location>
    <location name="EYEPOINT" unit="M">
      <x>-0.373067</x>
@@ -62,9 +62,9 @@
    <ixx unit="SLUG*FT2">      2206 </ixx>
    <iyy unit="SLUG*FT2">      2406 </iyy>
    <izz unit="SLUG*FT2">      4244 </izz>
-   <emptywt unit="LBS" >      2800 </emptywt> <!-- extra pounds added by larger engines -->
+   <emptywt unit="LBS" >      2800 </emptywt>
    <location name="CG" unit="M">
-     <x> 0.390881</x>
+     <x> 0.641881</x>
      <y> 0.00    </y>
      <z>-0.125318</z>
    </location> 
@@ -132,7 +132,7 @@
   	<location unit="M">
      <x>-1.60136</x>
      <y> 0.00   </y>
-     <z>-1.35708</z>
+     <z>-1.65708</z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -146,32 +146,32 @@
 
   <contact type="BOGEY" name="LEFT_MAIN">
    <location unit="M">
-     <x> 0.803253</x>
-     <y>-1.34673 </y>
-     <z>-1.33294 </z>
+     <x> 1.03253</x>
+     <y>-3.34673 </y>
+     <z>-1.76294 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       4500.40 </spring_coeff>   
    <damping_coeff unit="LBS/FT/SEC">   900.08 </damping_coeff>  
-   <max_steer unit="DEG">0</max_steer>
+   <max_steer unit="DEG">-5</max_steer>
    <brake_group>LEFT</brake_group>
    <retractable>1</retractable>
  </contact>
 
   <contact type="BOGEY" name="RIGHT_MAIN">
    <location unit="M">
-     <x> 0.803253</x>
-     <y> 1.34673 </y>
-     <z>-1.33294 </z>
+     <x> 1.03253</x>
+     <y> 3.34673 </y>
+     <z>-1.76294 </z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       4500.40 </spring_coeff>  
    <damping_coeff unit="LBS/FT/SEC">   900.08 </damping_coeff>  
-   <max_steer unit="DEG">0</max_steer>
+   <max_steer unit="DEG">-5</max_steer>
    <brake_group>RIGHT</brake_group>
    <retractable>1</retractable>
  </contact>
@@ -257,9 +257,12 @@
  
 <!-- Motores y helices -->
  <propulsion>
+  
+<!-- Tanques de combustible ** Combustible Avgas peso 6.02 lb por galon -->
+<!-- Dos tanques de combustible de 75-galones cada uno -->
  	
 <!-- Delantero -->
-<engine file="engine_GM380inSBV8">
+<engine file="engine_TSIO360C">
 	<location unit="M">
 		<x>-1.85601 </x>
 		<y> 0.00    </y>
@@ -271,7 +274,7 @@
 		<yaw>   0</yaw> 
 	</orient>
 	<feed>0</feed>
-	<thruster file="prop_IO360Criced">
+	<thruster file="prop_IO360C">
 		<location unit="M">
 			<x>-2.52872</x>
 			<y> 0.00 </y>
@@ -287,7 +290,7 @@
 </engine> 
 
 <!-- Trasero -->
-   <engine file="engine_GM380inSBV8">
+   <engine file="engine_TSIO360C">
    	<location unit="M">
       <x>2.31968</x>
       <y> 0.00 </y>
@@ -299,7 +302,7 @@
       <yaw>180</yaw>
     </orient>
     <feed>1</feed>
-    <thruster file="prop_IO360Criced">
+    <thruster file="prop_IO360C">
     <location unit="M">
       <x>2.85175</x>
       <y> 0.00 </y>
@@ -313,26 +316,24 @@
 		<sense>-1</sense>
     </thruster>
   </engine>
-  
-<!-- Tanques de combustible ** Combustible Avgas peso 6.02 lb por galon -->
-<!-- Dos tanques de combustible de 75-galones cada uno -->
+
 	<tank type="FUEL" number="0">
 		<location unit="M">
-			<x> 0.387413</x>
+			<x> 0.887413</x>
 			<y>-0.973096</y>
 			<z> 0.552551</z>
 		</location>
-		<capacity unit="LBS"> 451.50 </capacity>
+		<capacity unit="LBS"> 600.50 </capacity>
 		<contents unit="LBS"> 225.00 </contents>
 	</tank>
 
 	<tank type="FUEL" number="1">
 		<location unit="M">
-			<x> 0.387413</x>
+			<x> 0.887413</x>
 			<y> 0.973096</y>
 			<z> 0.552551</z>
 		</location>
-		<capacity unit="LBS"> 451.50 </capacity>
+		<capacity unit="LBS"> 600.50 </capacity>
 		<contents unit="LBS"> 225.00 </contents>
 	</tank>
 </propulsion>
@@ -552,7 +553,7 @@
        </domain>
        <range>
           <min>0.48</min>
-          <max>0.99</max>
+          <max>0.75</max>
        </range>
      <output>propulsion/engine[0]/cooling-factor</output>
      </aerosurface_scale>
@@ -581,7 +582,7 @@
        </domain>
        <range>
           <min>0.48</min>
-          <max>0.99</max>
+          <max>0.75</max>
        </range>
      <output>propulsion/engine[1]/cooling-factor</output>
      </aerosurface_scale>

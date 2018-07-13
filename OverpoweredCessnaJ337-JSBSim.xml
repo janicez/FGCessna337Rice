@@ -34,8 +34,8 @@
               <!-- Medidas y pesos -->
  <metrics>
    <wingarea  unit="FT2">  201.31 </wingarea>
-   <wingspan  unit="FT" >   37.99 </wingspan>
-   <wing_incidence>          2.00 </wing_incidence>
+   <wingspan  unit="FT" >   39.99 </wingspan>
+   <wing_incidence>          1.00 </wing_incidence>
    <chord     unit="FT" >    5.75 </chord> <!-- the slightest increase in taper -->
    <htailarea unit="FT2">   32.21 </htailarea>
    <htailarm  unit="FT" >   15.47 </htailarm>
@@ -132,7 +132,7 @@
   	<location unit="M">
      <x>-1.60136</x>
      <y> 0.00   </y>
-     <z>-1.35708</z>
+     <z>-1.55708</z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -148,7 +148,7 @@
    <location unit="M">
      <x> 0.803253</x>
      <y>-1.34673 </y>
-     <z>-1.33294 </z>
+     <z>-1.53294 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -164,7 +164,7 @@
    <location unit="M">
      <x> 0.803253</x>
      <y> 1.34673 </y>
-     <z>-1.33294 </z>
+     <z>-1.53294 </z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -259,7 +259,7 @@
  <propulsion>
  	
 <!-- Delantero -->
-<engine file="engine_GM380inSBV8">
+<engine file="PT6A67F">
 	<location unit="M">
 		<x>-1.85601 </x>
 		<y> 0.00    </y>
@@ -271,7 +271,8 @@
 		<yaw>   0</yaw> 
 	</orient>
 	<feed>0</feed>
-	<thruster file="prop_IO360Criced">
+    <feed>2</feed>
+	<thruster file="averystrangeprop">
 		<location unit="M">
 			<x>-2.52872</x>
 			<y> 0.00 </y>
@@ -287,7 +288,7 @@
 </engine> 
 
 <!-- Trasero -->
-   <engine file="engine_GM380inSBV8">
+   <engine file="PT6A67F">
    	<location unit="M">
       <x>2.31968</x>
       <y> 0.00 </y>
@@ -299,7 +300,8 @@
       <yaw>180</yaw>
     </orient>
     <feed>1</feed>
-    <thruster file="prop_IO360Criced">
+    <feed>2</feed>
+    <thruster file="averystrangeprop">
     <location unit="M">
       <x>2.85175</x>
       <y> 0.00 </y>
@@ -334,6 +336,16 @@
 		</location>
 		<capacity unit="LBS"> 451.50 </capacity>
 		<contents unit="LBS"> 225.00 </contents>
+	</tank>
+
+	<tank type="FUEL" number="2">
+		<location unit="M">
+			<x> 0.287413</x>
+			<y> 0</y>
+			<z>-1.252551</z>
+		</location>
+		<capacity unit="LBS"> 251.50 </capacity>
+		<contents unit="LBS"> 105.00 </contents>
 	</tank>
 </propulsion>
  

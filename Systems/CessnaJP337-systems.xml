@@ -23,14 +23,14 @@
 		<name>vacuum</name>
 		<number>0</number>
 		<rpm>/engines/engine[0]/rpm</rpm>
-		<scale>1</scale>
+		<scale>10</scale>
 	</vacuum>
 
 	<vacuum>
 		<name>vacuum</name>
 		<number>1</number>
 		<rpm>/engines/engine[1]/rpm</rpm>
-		<scale>1</scale>
+		<scale>10</scale>
 	</vacuum>
 
 </PropertyList>

@@ -14,7 +14,7 @@
 	</rating>
 	<status>beta</status>
 	<flight-model>jsb</flight-model>
-	<aero>OverpoweredCessnaT337-JSBSim</aero>
+	<aero>OverpoweredCessnaJ337-JSBSim</aero>
         
 	<model>
 		<path archive="y">Aircraft/Cessna337/Models/Cessna337TP.xml</path>
@@ -369,10 +369,10 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-				if(getprop("controls/engines/engine[0]/cowl-flaps-norm") > 0) {
-					interpolate("controls/engines/engine[0]/cowl-flaps-norm", 0, 1);
+				if(getprop("controls/engines/engine[0]/cutoff") > 0) {
+					interpolate("controls/engines/engine[0]/cutoff", 0, 1);
 					} else {
-					interpolate("controls/engines/engine[0]/cowl-flaps-norm", 1, 1);
+					interpolate("controls/engines/engine[0]/cutoff", 1, 1);
 				}
 				</script>
 			</binding>
@@ -384,10 +384,10 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-				if(getprop("controls/engines/engine[1]/cowl-flaps-norm") > 0) {
-					interpolate("controls/engines/engine[1]/cowl-flaps-norm", 0, 1);
+				if(getprop("controls/engines/engine[1]/cutoff") > 0) {
+					interpolate("controls/engines/engine[1]/cutoff", 0, 1);
 					} else {
-					interpolate("controls/engines/engine[1]/cowl-flaps-norm", 1, 1);
+					interpolate("controls/engines/engine[1]/cutoff", 1, 1);
 				}
 				</script>
 			</binding>

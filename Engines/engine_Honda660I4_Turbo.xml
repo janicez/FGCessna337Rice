@@ -1,28 +1,36 @@
 <?xml version="1.0"?>
 
 <piston_engine name="overboosted motorbike engine">
-	<minmp unit="INHG">		    6.0  </minmp>
-	<maxmp unit="INHG">		   28.0  </maxmp>
-	<displacement unit="CC">  890.0</displacement>
-	<cylinders>					4.0  </cylinders>
-	<compression-ratio>			26  </compression-ratio>
-	<maxhp> 				  402.0  </maxhp>
-	<cycles>				  4.0  </cycles>
-	<idlerpm>				  803.0  </idlerpm>
-	<maxrpm>				14000.0  </maxrpm>
+	<minmp unit="INHG">		   6.00  </minmp>
+	<maxmp unit="INHG">		  21.00  </maxmp>
+	<displacement unit="CC">  6200.0</displacement>
+	<stroke unit="IN"> 3.62 </stroke>
+	<cylinders>					8  </cylinders>
+	<compression-ratio>			11.5  </compression-ratio>
+	<maxhp> 				  420.0  </maxhp>
+	<cycles>				    4.0  </cycles>
+	<idlerpm>				  700.0  </idlerpm>
+	<maxrpm>				 5600.0  </maxrpm>
 	<sparkfaildrop>				0.1  </sparkfaildrop>
-	<volumetric-efficiency>		1.10 </volumetric-efficiency>
-	<air-intake-impedance-factor>0.05</air-intake-impedance-factor>
-	<numboostspeeds>1</numboostspeeds>
-	<boost-loss-factor>0.99</boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
-	<ratedboost1>        21 </ratedboost1>
-	<ratedpower1>       235 </ratedpower1>
-	<ratedrpm1>       11500 </ratedrpm1>
-	<ratedaltitude1>  47000 </ratedaltitude1>
-	<man-press-lag>    0.05 </man-press-lag> <!-- to simulate turbo lag -->
+	<volumetric-efficiency>		1.01 </volumetric-efficiency>
+	<air-intake-impedance-factor>0.55</air-intake-impedance-factor>
+	<numboostspeeds>3</numboostspeeds>
+	<ratedboost1>      0.88 </ratedboost1>
+	<ratedpower1>       460 </ratedpower1>
+	<ratedrpm1>        1900 </ratedrpm1>
+	<ratedaltitude1>   9000 </ratedaltitude1>
+	<ratedboost2>      0.76 </ratedboost2>
+	<ratedpower2>       460 </ratedpower2>
+	<ratedrpm2>        3200 </ratedrpm2>
+	<ratedaltitude2>  14090 </ratedaltitude2>
+	<ratedboost3>      0.74 </ratedboost3>
+	<ratedpower3>       460 </ratedpower3>
+	<ratedrpm3>        4500 </ratedrpm3>
+	<ratedaltitude3>  40000 </ratedaltitude3>
+	<boost-loss-factor> 0.1 </boost-loss-factor> <!-- It's a turbo, not a goddamned super. This should probably be lower(!)-->
+	<man-press-lag>     0.9 </man-press-lag> <!-- to simulate turbo lag -->
 	<boostmanual>         0 </boostmanual>
 	<!-- Optional items that affect engine performance -->
 	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
-	<bsfc>						0.33</bsfc>
 	<!-- <bsfc>						0.326</bsfc> -->
 </piston_engine>

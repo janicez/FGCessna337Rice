@@ -37,6 +37,26 @@
 		</less-than>
 	</input>
 	<output>/instrumentation/vacuum/inoperative[1]</output>
+	<filter>
+		<name>Front prop RPM as RPM</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/fdm/jsbsim/propulsion/engine[0]/propeller-rpm</property>
+		</input>
+		<output>/engines/engine[0]/rpm</output>
+	</filter>
+
+	<filter>
+		<name>Back prop RPM as RPM</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>
+			<property>/fdm/jsbsim/propulsion/engine[1]/propeller-rpm</property>
+		</input>
+		<output>/engines/engine[1]/rpm</output>
+	</filter>
+
 </logic>
 
 </PropertyList>

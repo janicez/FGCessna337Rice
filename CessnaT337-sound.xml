@@ -76,10 +76,10 @@
 			<offset>0.35</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[0]/rpm</property>
+			<property>/fdm/jsbsim/propulsion/engine[0]/propeller-rpm</property>
 			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>2.0</max>
+			<max>4.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -101,17 +101,16 @@
 		</condition>
 		<volume>
 			<property>engines/engine[0]/mp-osi</property>
-			<factor>0.0144</factor>
-			<min>0.03</min>
-			<max>0.4</max>
+			<factor>0.08</factor>
+			<min>0.09</min>
+			<max>0.6</max>
 			<offset>0.03</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[0]/rpm</property>
-			<factor>0.0005</factor>
-			<min>1</min>
+			<property>engines/engine[0]/mp-osi</property>
+			<factor>0.01</factor>
+			<min>0.1</min>
 			<max>20.0</max>
-			<offset>1</offset>
 		</pitch>
 	</engine>
 
@@ -132,17 +131,16 @@
 		</condition>
 		<volume>
 			<property>engines/engine[0]/mp-osi</property>
-			<factor>0.0144</factor>
-			<min>0.02</min>
+			<factor>0.06</factor>
+			<min>0.09</min>
 			<max>8</max>
 			<offset>0.02</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[0]/rpm</property>
-			<factor>0.0005</factor>
-			<min>1</min>
+			<property>engines/engine[0]/mp-osi</property>
+			<factor>0.01</factor>
+			<min>0.1</min>
 			<max>20.0</max>
-			<offset>1</offset>
 		</pitch>
 	</engine>
 
@@ -163,17 +161,16 @@
 		</condition>
 		<volume>
 			<property>engines/engine[1]/mp-osi</property>
-			<factor>0.0072</factor>
-			<min>0.015</min>
-			<max>1</max>
-			<offset>0.015</offset>
+			<factor>0.08</factor>
+			<min>0.09</min>
+			<max>0.6</max>
+			<offset>0.03</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[1]/rpm</property>
-			<factor>0.0005</factor>
-			<min>1</min>
-			<max>20</max>
-			<offset>1</offset>
+			<property>engines/engine[1]/mp-osi</property>
+			<factor>0.01</factor>
+			<min>0.1</min>
+			<max>20.0</max>
 		</pitch>
 	</engine>
 
@@ -194,17 +191,16 @@
 		</condition>
 		<volume>
 			<property>engines/engine[1]/mp-osi</property>
-			<factor>0.0144</factor>
-			<min>0.02</min>
-			<max>1</max>
+			<factor>0.06</factor>
+			<min>0.09</min>
+			<max>8</max>
 			<offset>0.02</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[1]/rpm</property>
-			<factor>0.0005</factor>
-			<min>1</min>
+			<property>engines/engine[1]/mp-osi</property>
+			<factor>0.01</factor>
+			<min>0.1</min>
 			<max>20.0</max>
-			<offset>1</offset>
 		</pitch>
 	</engine>
 
@@ -231,7 +227,7 @@
 			<offset>0.4</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[0]/rpm</property>
+			<property>/fdm/jsbsim/propulsion/engine[0]/propeller-rpm</property>
 			<factor>0.0005</factor>
 			<min>0.3</min>
 			<max>2.0</max>
@@ -310,10 +306,10 @@
 			<offset>0.35</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[1]/rpm</property>
+			<property>/fdm/jsbsim/propulsion/engine[1]/propeller-rpm</property>
 			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>2.0</max>
+			<max>4.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>
@@ -341,10 +337,10 @@
 			<offset>0.4</offset>
 		</volume>
 		<pitch>
-			<property>engines/engine[1]/rpm</property>
+			<property>/fdm/jsbsim/propulsion/engine[1]/propeller-rpm</property>
 			<factor>0.0005</factor>
 			<min>0.3</min>
-			<max>2.0</max>
+			<max>4.0</max>
 			<offset>0.3</offset>
 		</pitch>
 	</engine>

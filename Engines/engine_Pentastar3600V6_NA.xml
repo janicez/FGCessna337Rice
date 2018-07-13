@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <piston_engine name="Chrysler _Pentastar 3600cc V6 from 2016">
-	<minmp unit="INHG">		    9.0  </minmp>
+	<minmp unit="INHG">		    6.0  </minmp>
 	<maxmp unit="INHG">		   28.0  </maxmp>
 	<displacement unit="CC"> 3600  </displacement>
 	<bore unit="IN">			3.78</bore>
@@ -14,7 +14,7 @@
 	<maxrpm>				 6400.0  </maxrpm>
 	<sparkfaildrop>				0.0  </sparkfaildrop>
 	<volumetric-efficiency>		0.88 </volumetric-efficiency>
-	<air-intake-impedance-factor>0.34</air-intake-impedance-factor>
+	<air-intake-impedance-factor>0.20</air-intake-impedance-factor>
 	<!-- Optional items that affect engine performance -->
 	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
 </piston_engine>

@@ -37,22 +37,23 @@
 		<output>/engines/engine[1]/mp-osi</output>
 	</filter>
 
+
 	<filter>
-		<name>Front prop RPM as RPM</name>
+		<name>Front N1 as RPM</name>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>100</gain>
 		<input>
-			<property>/fdm/jsbsim/propulsion/engine[0]/propeller-rpm</property>
+			<property>/fdm/jsbsim/propulsion/engine[0]/n1</property>
 		</input>
 		<output>/engines/engine[0]/rpm</output>
 	</filter>
 
 	<filter>
-		<name>Back prop RPM as RPM</name>
+		<name>Back N1 as RPM</name>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>100</gain>
 		<input>
-			<property>/fdm/jsbsim/propulsion/engine[1]/propeller-rpm</property>
+			<property>/fdm/jsbsim/propulsion/engine[1]/n1</property>
 		</input>
 		<output>/engines/engine[1]/rpm</output>
 	</filter>

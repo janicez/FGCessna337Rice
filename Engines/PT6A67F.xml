@@ -4,10 +4,10 @@
   <milthrust unit="LBS">2400</milthrust>
   <idlen1>33.0</idlen1>
   <maxn1>115.0</maxn1>
-  <maxpower unit="HP">470</maxpower>
-  <psfc unit="LBS/HR/HP">0.43</psfc>
+  <maxpower unit="HP">1500</maxpower>
+  <psfc unit="LBS/HR/HP">0.23</psfc>
   <n1idle_max_delay>2</n1idle_max_delay>
-  <maxstartingtime>1</maxstartingtime>
+  <maxstartingtime>10</maxstartingtime>
   <startern1>40</startern1>
   <ielumaxtorque unit="FT*LB">800</ielumaxtorque>
   <itt_delay>0.15</itt_delay>
@@ -41,7 +41,10 @@
 1600	.00	.50	11.00	50.80	90.00	150.00	290.64	340.0
 1900	.00	.50	14.00	79.88	140.00	210.00	310.60	380.0
 2150	.00	.50	15.00	125.0	250.88	290.00	350.80	422.0
-3150	.00	.50	17.00	170.00	350.00	400.00	430.00	472.0
+3150	.00	.50	17.00	170.00	350.00	400.00	470.00	500.0
+3600	.00	.50	22.00	330.00	410.00	490.00	540.00	560.0
+5400	.00	.50	29.00	390.00	490.00	670.00	960.00	1240.0
+7000	.00	.50	35.00	450.00	560.00	850.00	1050.00	1500.0
 
     </tableData>
   </table>
