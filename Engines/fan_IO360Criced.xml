@@ -17,9 +17,9 @@
 
 <propeller name="prop">
   <ixx>					3.03 </ixx>
-  <diameter unit="IN"> 90.0  </diameter>
-  <numblades>			5    </numblades>
-  <gearratio>			1.50</gearratio>
+  <diameter unit="IN"> 106.0  </diameter>
+  <numblades>			3    </numblades>
+  <gearratio>			1.20</gearratio>
   <p_factor>			4.00 </p_factor>
   <minpitch>		    8   </minpitch>
   <maxpitch>		   56   </maxpitch>
