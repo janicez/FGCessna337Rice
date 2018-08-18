@@ -3,7 +3,7 @@
 <piston_engine name="Because Why Not">
 	<minmp unit="INHG">	    20.4  </minmp>
 	<maxmp unit="INHG">	    26.4  </maxmp>
-	<displacement unit="IN3">  310.0  </displacement>
+	<displacement unit="IN3">  380.0  </displacement>
 	<cylinders>		    24.0  </cylinders>
 	<compression-ratio>	    13.0  </compression-ratio> <!-- actually a 13:1 EXPANSION -->
 	<maxhp> 		   270.0  </maxhp>
@@ -15,15 +15,15 @@
 	<air-intake-impedance-factor>0.2</air-intake-impedance-factor>
 	<numboostspeeds>               3</numboostspeeds>
 	<boost-loss-factor>          0.1</boost-loss-factor>
-	<ratedboost1>        11 </ratedboost1>
+	<ratedboost1>         8 </ratedboost1>
 	<ratedpower1>       480 </ratedpower1>
 	<ratedrpm1>        4000 </ratedrpm1>
 	<ratedaltitude1>  11000 </ratedaltitude1>
-	<ratedboost2>        10 </ratedboost2>
+	<ratedboost2>         8 </ratedboost2>
 	<ratedpower2>       480 </ratedpower2>
 	<ratedrpm2>        4000 </ratedrpm2>
 	<ratedaltitude2>  22000 </ratedaltitude2>
-	<ratedboost3>         9 </ratedboost3>
+	<ratedboost3>         8 </ratedboost3>
 	<ratedpower3>       480 </ratedpower3>
 	<ratedrpm3>        4000 </ratedrpm3>
 	<ratedaltitude3>  33000 </ratedaltitude3>

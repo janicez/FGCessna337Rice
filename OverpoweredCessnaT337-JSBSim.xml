@@ -559,9 +559,9 @@
    </aerosurface_scale>
    <summer name="wing size">
       <input>fcs/Sw-sqft-add</input>
-      <bias>135</bias>
+      <bias>155</bias>
       <clipto>
-        <min> 135 </min>
+        <min> 155 </min>
         <max> 225 </max>
       </clipto>
       <output>metrics/Sw-sqft</output>
@@ -717,7 +717,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.0077 </value>
+           <value> 0.01 </value>
        </product>
     </function>
 
@@ -797,7 +797,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.0050 </value>
+           <value> 0.0030 </value>
          </product>
     </function>
 
