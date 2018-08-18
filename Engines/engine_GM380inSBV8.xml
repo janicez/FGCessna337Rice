@@ -1,26 +1,33 @@
 <?xml version="1.0"?>
 
 <piston_engine name="Because Why Not">
-	<minmp unit="INHG">	    12.0  </minmp>
-	<maxmp unit="INHG">	    23.4  </maxmp>
-	<displacement unit="IN3">  380.0  </displacement>
-	<stroke unit="IN">           4.0  </stroke>
-	<cylinders>		     8.0  </cylinders>
+	<minmp unit="INHG">	    20.4  </minmp>
+	<maxmp unit="INHG">	    26.4  </maxmp>
+	<displacement unit="IN3">  310.0  </displacement>
+	<cylinders>		    24.0  </cylinders>
 	<compression-ratio>	    13.0  </compression-ratio> <!-- actually a 13:1 EXPANSION -->
-	<maxhp> 		   420.0  </maxhp>
+	<maxhp> 		   270.0  </maxhp>
 	<cycles>		     4.0  </cycles>
-	<idlerpm>		   200.0  </idlerpm>
-	<maxrpm>		  2400.0  </maxrpm>
+	<idlerpm>		    50.0  </idlerpm>
+	<maxrpm>		  3600.0  </maxrpm>
 	<sparkfaildrop>		     0.1  </sparkfaildrop> <!-- single spark motor -->
-	<volumetric-efficiency>	     1.005 </volumetric-efficiency>
+	<volumetric-efficiency>	     1.08 </volumetric-efficiency>
 	<air-intake-impedance-factor>0.2</air-intake-impedance-factor>
-	<numboostspeeds>               1</numboostspeeds>
+	<numboostspeeds>               3</numboostspeeds>
 	<boost-loss-factor>          0.1</boost-loss-factor>
-	<ratedboost1>         6 </ratedboost1>
+	<ratedboost1>        11 </ratedboost1>
 	<ratedpower1>       480 </ratedpower1>
 	<ratedrpm1>        4000 </ratedrpm1>
-	<ratedaltitude1>  14000 </ratedaltitude1>
-	<man-press-lag>     0.9 </man-press-lag>
+	<ratedaltitude1>  11000 </ratedaltitude1>
+	<ratedboost2>        10 </ratedboost2>
+	<ratedpower2>       480 </ratedpower2>
+	<ratedrpm2>        4000 </ratedrpm2>
+	<ratedaltitude2>  22000 </ratedaltitude2>
+	<ratedboost3>         9 </ratedboost3>
+	<ratedpower3>       480 </ratedpower3>
+	<ratedrpm3>        4000 </ratedrpm3>
+	<ratedaltitude3>  33000 </ratedaltitude3>
+	<man-press-lag>     2.0 </man-press-lag>
 	<boostmanual>         0 </boostmanual>
 	<!-- Optional items that affect engine performance -->
 	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->

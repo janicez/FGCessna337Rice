@@ -33,18 +33,18 @@
 
               <!-- Medidas y pesos -->
  <metrics>
-   <wingarea  unit="FT2">  135.00 </wingarea>
-   <wingspan  unit="FT" >   36.99 </wingspan>
-   <wing_incidence>          0.50 </wing_incidence>
-   <chord     unit="FT" >    5.75 </chord> <!-- the slightest increase in taper -->
-   <htailarea unit="FT2">   42.21 </htailarea>
+   <wingarea  unit="FT2">  201.31 </wingarea>
+   <wingspan  unit="FT" >   37.99 </wingspan>
+   <wing_incidence>          1.20 </wing_incidence>
+   <chord     unit="FT" >    5.85 </chord> <!-- the slightest increase in taper -->
+   <htailarea unit="FT2">   32.21 </htailarea>
    <htailarm  unit="FT" >   15.47 </htailarm>
-   <vtailarea unit="FT2">   50.13 </vtailarea>
+   <vtailarea unit="FT2">   20.13 </vtailarea>
    <vtailarm  unit="FT" >   14.88 </vtailarm>
    <location name="AERORP" unit="M">
-     <x> 0.531881</x> <!-- <x> 0.583126</x> -->    
+     <x> 0.391881</x> <!-- <x> 0.583126</x> -->    
      <y> 0.00    </y>
-     <z>-0.225318</z>          
+     <z>-0.125318</z>          
    </location>
    <location name="EYEPOINT" unit="M">
      <x>-0.373067</x>
@@ -62,9 +62,9 @@
    <ixx unit="SLUG*FT2">      2206 </ixx>
    <iyy unit="SLUG*FT2">      2406 </iyy>
    <izz unit="SLUG*FT2">      4244 </izz>
-   <emptywt unit="LBS" >      2600 </emptywt> <!-- extra pounds added by larger engines -->
+   <emptywt unit="LBS" >      2800 </emptywt> <!-- extra pounds added by larger engines -->
    <location name="CG" unit="M">
-     <x> 0.531881</x>
+     <x> 0.390881</x>
      <y> 0.00    </y>
      <z>-0.125318</z>
    </location> 
@@ -86,42 +86,6 @@
 			<z>-0.292</z>
 		</location>
 	</pointmass>
-	
-	<pointmass name="Passenger 2">
-		<weight unit="LBS"> 0 </weight>
-		<location name="POINTMASS" unit="M">
-			<x> 0.440</x>
-			<y>-0.280</y>
-			<z>-0.292</z>
-		</location>
-	</pointmass>
-	
-	<pointmass name="Passenger 3">
-		<weight unit="LBS"> 0 </weight>
-		<location name="POINTMASS" unit="M">
-			<x> 0.440</x>
-			<y> 0.280</y>
-			<z>-0.292</z>
-		</location>
-	</pointmass>
-
-	<pointmass name="Passenger 4">
-		<weight unit="LBS"> 0 </weight>
-		<location name="POINTMASS" unit="M">
-			<x> 1.170</x>
-			<y>-0.280</y>
-			<z>-0.292</z>
-		</location>
-	</pointmass>
-
-	<pointmass name="Passenger 5">
-		<weight unit="LBS"> 0 </weight>
-		<location name="POINTMASS" unit="M">
-			<x> 1.170</x>
-			<y> 0.280</y>
-			<z>-0.292</z>
-		</location>
-	</pointmass> 
  
  </mass_balance>
  
@@ -132,7 +96,7 @@
   	<location unit="M">
      <x>-1.60136</x>
      <y> 0.00   </y>
-     <z>-1.66708</z>
+     <z>-1.54708</z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -148,14 +112,14 @@
    <location unit="M">
      <x> 0.803253</x>
      <y>-1.34673 </y>
-     <z>-1.63294 </z>
+     <z>-1.53294 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       4500.40 </spring_coeff>   
    <damping_coeff unit="LBS/FT/SEC">   900.08 </damping_coeff>  
-   <max_steer unit="DEG">0</max_steer>
+   <max_steer unit="DEG">2</max_steer>
    <brake_group>LEFT</brake_group>
    <retractable>1</retractable>
  </contact>
@@ -164,14 +128,14 @@
    <location unit="M">
      <x> 0.803253</x>
      <y> 1.34673 </y>
-     <z>-1.63294 </z>
+     <z>-1.53294 </z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       4500.40 </spring_coeff>  
    <damping_coeff unit="LBS/FT/SEC">   900.08 </damping_coeff>  
-   <max_steer unit="DEG">0</max_steer>
+   <max_steer unit="DEG">2</max_steer>
    <brake_group>RIGHT</brake_group>
    <retractable>1</retractable>
  </contact>
@@ -259,58 +223,55 @@
  <propulsion>
  	
 <!-- Delantero -->
-
-<!-- Trasero un -->
-   <engine file="engine_GM380inSBV8">
-   	<location unit="M">
-      <x>-0.511</x>
-      <y> 0 </y>
-      <z>0.090422</z>
-    </location>
-    <orient unit="DEG">
-      <pitch>0</pitch>
-      <roll> 0</roll>
-      <yaw>180</yaw>
-    </orient>
-    <feed>0</feed>
-    <feed>1</feed>
-    <feed>2</feed>
-    <thruster file="fan_IO360Criced">
-    <location unit="M">
-      <x>0.611</x>
-      <y> 0 </y>
-      <z>0.098886</z>
-    </location>
-    <orient unit="DEG">
-       <pitch>-2</pitch>
-       <roll> 0</roll>
-       <yaw>  0</yaw>
-     </orient>
+<engine file="engine_GM380inSBV8">
+	<location unit="M">
+		<x>-1.85601 </x>
+		<y> 0.00    </y>
+		<z>-0.069293</z>
+	</location>
+	<orient unit="DEG">
+		<pitch>-3</pitch> 
+		<roll>  0</roll> 
+		<yaw>   0</yaw> 
+	</orient>
+	<feed>0</feed>
+	<feed>2</feed>
+	<feed>3</feed>
+	<thruster file="fan_IO360Criced">
+		<location unit="M">
+			<x>-2.52872</x>
+			<y> 0.00 </y>
+			<z>-0.089188</z>
+		</location>
+		<orient unit="DEG">
+			<pitch>-3</pitch>
+			<roll>  0</roll>
+			<yaw>   0</yaw>
+		</orient>
 		<sense>1</sense>
-    </thruster>
-  </engine>
-  
+	</thruster>
+</engine> 
 
-<!-- Trasero deux -->
+<!-- Trasero -->
    <engine file="engine_GM380inSBV8">
    	<location unit="M">
-      <x>5.31968</x>
-      <y> 0 </y>
-      <z>0.990422</z>
+      <x>2.31968</x>
+      <y> 0.00 </y>
+      <z>0.290422</z>
     </location>
     <orient unit="DEG">
       <pitch>0</pitch>
       <roll> 0</roll>
       <yaw>180</yaw>
     </orient>
-    <feed>0</feed>
     <feed>1</feed>
-    <feed>2</feed>
+	<feed>2</feed>
+	<feed>3</feed>
     <thruster file="fan_IO360Criced">
     <location unit="M">
-      <x>5.85175</x>
-      <y> 0 </y>
-      <z>0.998886</z>
+      <x>2.85175</x>
+      <y> 0.00 </y>
+      <z>0.298886</z>
     </location>
     <orient unit="DEG">
        <pitch>0</pitch>
@@ -349,8 +310,18 @@
 			<y> 0</y>
 			<z>-1.252551</z>
 		</location>
-		<capacity unit="LBS">1400.50 </capacity>
-		<contents unit="LBS"> 800.00 </contents>
+		<capacity unit="LBS"> 451.50 </capacity>
+		<contents unit="LBS"> 225.00 </contents>
+	</tank>
+
+	<tank type="FUEL" number="3">
+		<location unit="M">
+			<x> 0.487413</x>
+			<y> 0</y>
+			<z>-0.5551</z>
+		</location>
+		<capacity unit="LBS">2400.00 </capacity>
+		<contents unit="LBS"> 225.00 </contents>
 	</tank>
 </propulsion>
  
@@ -443,9 +414,6 @@
 
 <!-- Controles del Timon -->
   <channel name="Yaw">
-
-
-
    <summer name="Rudder Command Sum">
       <input>fcs/rudder-cmd-norm</input>
       <input>fcs/yaw-trim-cmd-norm</input>
@@ -454,45 +422,11 @@
         <max>  0.45 </max>
       </clipto>
    </summer>
-
-            <scheduled_gain name="Yaw Damper">
-                <input>velocities/r-aero-rad_sec</input>
-                <table>
-                  <independentVar>velocities/mach</independentVar>
-                    <tableData>
-                        0.00    0.0
-                        0.10    0.0
-                        0.11    1.0
-                    </tableData>
-                </table>
-            </scheduled_gain>
-
-            <scheduled_gain name="Yaw Damper Final">
-                <input>fcs/yaw-damper</input>
-                <table>
-                  <independentVar>velocities/mach</independentVar>
-                    <tableData>
-                        0.00    0.0
-                        0.10    0.0
-                        0.11    1.0
-                    </tableData>
-                </table>
-            </scheduled_gain>
-
-            <summer name="Rudder Sum">
-                <input>fcs/rudder-command-sum</input>
-                <input>fcs/yaw-damper-final</input>
-                <clipto>
-                    <min>-1</min>
-                    <max> 1</max>
-                </clipto>
-            </summer>
-
    <aerosurface_scale name="Rudder Control">
-      <input>fcs/rudder-sum</input>
+      <input>fcs/rudder-command-sum</input>
       <range>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.45 </min>
+        <max>  0.45 </max>
       </range>
       <output>fcs/rudder-pos-rad</output>
    </aerosurface_scale>
@@ -542,51 +476,6 @@
       </range>
       <output>fcs/flap-pos-norm</output>
    </aerosurface_scale>
-  </channel>
-
-  <channel name="Wings">
-   <aerosurface_scale name="flap normalization wing swing area">
-      <input>fcs/flap-pos-deg</input>
-      <domain>
-        <min>  0 </min>
-        <max> 30 </max>
-      </domain>
-      <range>
-        <min>   0 </min>
-        <max>  70 </max>
-      </range>
-      <output>fcs/Sw-sqft-add</output>
-   </aerosurface_scale>
-   <summer name="wing size">
-      <input>fcs/Sw-sqft-add</input>
-      <bias>135</bias>
-      <clipto>
-        <min> 135 </min>
-        <max> 225 </max>
-      </clipto>
-      <output>metrics/Sw-sqft</output>
-   </summer>
-   <aerosurface_scale name="flap norm wing swing reaction point">
-      <input>fcs/flap-pos-deg</input>
-      <domain>
-        <min> 0 </min>
-        <max> 30 </max>
-      </domain>
-      <range>
-        <min> 0 </min>
-        <max> 12.864803 </max>
-      </range>
-      <output>fcs/aero-rp-x-in-add</output>
-   </aerosurface_scale>
-   <summer name="wing react point">
-      <input>-fcs/aero-rp-x-in-add</input>
-      <bias>33.805</bias>
-      <clipto>
-        <min> 20.94019688 </min>
-        <max> 33.805 </max>
-      </clipto>
-      <output>metrics/aero-rp-x-in</output>
-   </summer>
   </channel>
 
 <!-- Controles tren de aterrizaje -->
@@ -717,7 +606,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.0077 </value>
+           <value> 0.01333 </value>
        </product>
     </function>
 
@@ -737,7 +626,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/elevator-pos-rad</property>
-           <value>0.15</value>
+           <value>0.2</value>
        </product>
     </function>
 
@@ -797,7 +686,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.0050 </value>
+           <value> 0.00100 </value>
          </product>
     </function>
 

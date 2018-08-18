@@ -12,9 +12,9 @@
 -->
 
 <turbine_engine name="PW300">
-  <milthrust>  10000.0 </milthrust>
+  <milthrust>  2000.0 </milthrust>
   <bypassratio>    5.0 </bypassratio>
-  <tsfc>         0.0003 </tsfc>
+  <tsfc>         0.0009 </tsfc>
   <bleed>          0.03 </bleed>
   <idlen1>         21.0 </idlen1>
   <idlen2>         27.0 </idlen2>

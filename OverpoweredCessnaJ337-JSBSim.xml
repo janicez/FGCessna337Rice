@@ -33,18 +33,18 @@
 
               <!-- Medidas y pesos -->
  <metrics>
-   <wingarea  unit="FT2">  201.31 </wingarea>
-   <wingspan  unit="FT" >   39.99 </wingspan>
-   <wing_incidence>          1.00 </wing_incidence>
+   <wingarea  unit="FT2">   95.00 </wingarea>
+   <wingspan  unit="FT" >   36.99 </wingspan>
+   <wing_incidence>          0.50 </wing_incidence>
    <chord     unit="FT" >    5.75 </chord> <!-- the slightest increase in taper -->
    <htailarea unit="FT2">   32.21 </htailarea>
    <htailarm  unit="FT" >   15.47 </htailarm>
    <vtailarea unit="FT2">   20.13 </vtailarea>
    <vtailarm  unit="FT" >   14.88 </vtailarm>
    <location name="AERORP" unit="M">
-     <x> 0.391881</x> <!-- <x> 0.583126</x> -->    
+     <x> 0.531881</x> <!-- <x> 0.583126</x> -->    
      <y> 0.00    </y>
-     <z>-0.125318</z>          
+     <z>-0.225318</z>          
    </location>
    <location name="EYEPOINT" unit="M">
      <x>-0.373067</x>
@@ -64,7 +64,7 @@
    <izz unit="SLUG*FT2">      4244 </izz>
    <emptywt unit="LBS" >      2800 </emptywt> <!-- extra pounds added by larger engines -->
    <location name="CG" unit="M">
-     <x> 0.390881</x>
+     <x> 0.531881</x>
      <y> 0.00    </y>
      <z>-0.125318</z>
    </location> 
@@ -132,7 +132,7 @@
   	<location unit="M">
      <x>-1.60136</x>
      <y> 0.00   </y>
-     <z>-1.55708</z>
+     <z>-1.75708</z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -148,7 +148,7 @@
    <location unit="M">
      <x> 0.803253</x>
      <y>-1.34673 </y>
-     <z>-1.53294 </z>
+     <z>-1.63294 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -164,7 +164,7 @@
    <location unit="M">
      <x> 0.803253</x>
      <y> 1.34673 </y>
-     <z>-1.53294 </z>
+     <z>-1.63294 </z>
    </location> 
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -259,52 +259,57 @@
  <propulsion>
  	
 <!-- Delantero -->
-<engine file="PT6A67F">
-	<location unit="M">
-		<x>-1.85601 </x>
-		<y> 0.00    </y>
-		<z>-0.069293</z>
-	</location>
-	<orient unit="DEG">
-		<pitch>-3</pitch> 
-		<roll>  0</roll> 
-		<yaw>   0</yaw> 
-	</orient>
-	<feed>0</feed>
-    <feed>2</feed>
-	<thruster file="averystrangeprop">
-		<location unit="M">
-			<x>-2.52872</x>
-			<y> 0.00 </y>
-			<z>-0.089188</z>
-		</location>
-		<orient unit="DEG">
-			<pitch>-3</pitch>
-			<roll>  0</roll>
-			<yaw>   0</yaw>
-		</orient>
-		<sense>1</sense>
-	</thruster>
-</engine> 
 
-<!-- Trasero -->
-   <engine file="PT6A67F">
+<!-- Trasero un -->
+   <engine file="PW30">
    	<location unit="M">
       <x>2.31968</x>
-      <y> 0.00 </y>
-      <z>0.290422</z>
+      <y> 0 </y>
+      <z>0.090422</z>
     </location>
     <orient unit="DEG">
       <pitch>0</pitch>
       <roll> 0</roll>
       <yaw>180</yaw>
     </orient>
+    <feed>0</feed>
     <feed>1</feed>
     <feed>2</feed>
-    <thruster file="averystrangeprop">
+    <thruster file="direct">
     <location unit="M">
       <x>2.85175</x>
-      <y> 0.00 </y>
+      <y> 0 </y>
+      <z>0.098886</z>
+    </location>
+    <orient unit="DEG">
+       <pitch>0</pitch>
+       <roll> 0</roll>
+       <yaw>  0</yaw>
+     </orient>
+		<sense>-1</sense>
+    </thruster>
+  </engine>
+  
+
+<!-- Trasero deux -->
+   <engine file="PW300">
+   	<location unit="M">
+      <x>2.31968</x>
+      <y> 0 </y>
+      <z>0.990422</z>
+    </location>
+    <orient unit="DEG">
+      <pitch>0</pitch>
+      <roll> 0</roll>
+      <yaw>180</yaw>
+    </orient>
+    <feed>0</feed>
+    <feed>1</feed>
+    <feed>2</feed>
+    <thruster file="direct">
+    <location unit="M">
+      <x>2.85175</x>
+      <y> 0 </y>
       <z>0.298886</z>
     </location>
     <orient unit="DEG">
@@ -344,8 +349,8 @@
 			<y> 0</y>
 			<z>-1.252551</z>
 		</location>
-		<capacity unit="LBS"> 251.50 </capacity>
-		<contents unit="LBS"> 105.00 </contents>
+		<capacity unit="LBS">1400.50 </capacity>
+		<contents unit="LBS"> 800.00 </contents>
 	</tank>
 </propulsion>
  
@@ -438,6 +443,9 @@
 
 <!-- Controles del Timon -->
   <channel name="Yaw">
+
+
+
    <summer name="Rudder Command Sum">
       <input>fcs/rudder-cmd-norm</input>
       <input>fcs/yaw-trim-cmd-norm</input>
@@ -446,11 +454,45 @@
         <max>  0.45 </max>
       </clipto>
    </summer>
+
+            <scheduled_gain name="Yaw Damper">
+                <input>velocities/r-aero-rad_sec</input>
+                <table>
+                  <independentVar>velocities/mach</independentVar>
+                    <tableData>
+                        0.00    0.0
+                        0.10    0.0
+                        0.11    1.0
+                    </tableData>
+                </table>
+            </scheduled_gain>
+
+            <scheduled_gain name="Yaw Damper Final">
+                <input>fcs/yaw-damper</input>
+                <table>
+                  <independentVar>velocities/mach</independentVar>
+                    <tableData>
+                        0.00    0.0
+                        0.10    0.0
+                        0.11    1.0
+                    </tableData>
+                </table>
+            </scheduled_gain>
+
+            <summer name="Rudder Sum">
+                <input>fcs/rudder-command-sum</input>
+                <input>fcs/yaw-damper-final</input>
+                <clipto>
+                    <min>-1</min>
+                    <max> 1</max>
+                </clipto>
+            </summer>
+
    <aerosurface_scale name="Rudder Control">
-      <input>fcs/rudder-command-sum</input>
+      <input>fcs/rudder-sum</input>
       <range>
-        <min> -0.45 </min>
-        <max>  0.45 </max>
+        <min> -0.35 </min>
+        <max>  0.35 </max>
       </range>
       <output>fcs/rudder-pos-rad</output>
    </aerosurface_scale>
@@ -500,6 +542,51 @@
       </range>
       <output>fcs/flap-pos-norm</output>
    </aerosurface_scale>
+  </channel>
+
+  <channel name="Wings">
+   <aerosurface_scale name="flap normalization wing swing area">
+      <input>fcs/flap-pos-deg</input>
+      <domain>
+        <min>  0 </min>
+        <max> 30 </max>
+      </domain>
+      <range>
+        <min>   0 </min>
+        <max> 175 </max>
+      </range>
+      <output>fcs/Sw-sqft-add</output>
+   </aerosurface_scale>
+   <summer name="wing size">
+      <input>fcs/Sw-sqft-add</input>
+      <bias>60</bias>
+      <clipto>
+        <min> 60 </min>
+        <max> 235 </max>
+      </clipto>
+      <output>metrics/Sw-sqft</output>
+   </summer>
+   <aerosurface_scale name="flap norm wing swing reaction point">
+      <input>fcs/flap-pos-deg</input>
+      <domain>
+        <min> 0 </min>
+        <max> 30 </max>
+      </domain>
+      <range>
+        <min> 0 </min>
+        <max> 25.864803 </max>
+      </range>
+      <output>fcs/aero-rp-x-in-add</output>
+   </aerosurface_scale>
+   <summer name="wing react point">
+      <input>-fcs/aero-rp-x-in-add</input>
+      <bias>46.805</bias>
+      <clipto>
+        <min> 20.94019688 </min>
+        <max> 46.805 </max>
+      </clipto>
+      <output>metrics/aero-rp-x-in</output>
+   </summer>
   </channel>
 
 <!-- Controles tren de aterrizaje -->
@@ -630,7 +717,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.01333 </value>
+           <value> 0.0005 </value>
        </product>
     </function>
 
@@ -650,7 +737,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/elevator-pos-rad</property>
-           <value>0.2</value>
+           <value>0.15</value>
        </product>
     </function>
 
@@ -710,7 +797,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.00100 </value>
+           <value> 0.000050 </value>
          </product>
     </function>
 
