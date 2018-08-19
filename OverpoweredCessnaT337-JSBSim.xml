@@ -35,7 +35,7 @@
  <metrics>
    <wingarea  unit="FT2">  135.00 </wingarea>
    <wingspan  unit="FT" >   36.99 </wingspan>
-   <wing_incidence>          0.50 </wing_incidence>
+   <wing_incidence>          1.50 </wing_incidence>
    <chord     unit="FT" >    5.75 </chord> <!-- the slightest increase in taper -->
    <htailarea unit="FT2">   42.21 </htailarea>
    <htailarm  unit="FT" >   15.47 </htailarm>
@@ -553,7 +553,7 @@
       </domain>
       <range>
         <min>   0 </min>
-        <max>  70 </max>
+        <max> 100 </max>
       </range>
       <output>fcs/Sw-sqft-add</output>
    </aerosurface_scale>
@@ -562,7 +562,7 @@
       <bias>155</bias>
       <clipto>
         <min> 155 </min>
-        <max> 225 </max>
+        <max> 255 </max>
       </clipto>
       <output>metrics/Sw-sqft</output>
    </summer>
@@ -574,7 +574,7 @@
       </domain>
       <range>
         <min> 0 </min>
-        <max> 12.864803 </max>
+        <max> 24 </max>
       </range>
       <output>fcs/aero-rp-x-in-add</output>
    </aerosurface_scale>
@@ -582,8 +582,8 @@
       <input>-fcs/aero-rp-x-in-add</input>
       <bias>33.805</bias>
       <clipto>
-        <min> 20.94019688 </min>
-        <max> 33.805 </max>
+        <max> 41.805 </max>
+        <min> 0.94019688 </min>
       </clipto>
       <output>metrics/aero-rp-x-in</output>
    </summer>
@@ -717,7 +717,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.01 </value>
+           <value> 0.005 </value>
        </product>
     </function>
 
@@ -797,7 +797,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.0030 </value>
+           <value> 0.0001 </value>
          </product>
     </function>
 

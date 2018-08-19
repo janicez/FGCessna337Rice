@@ -6,24 +6,24 @@
 	<displacement unit="IN3">  380.0  </displacement>
 	<cylinders>		    24.0  </cylinders>
 	<compression-ratio>	    13.0  </compression-ratio> <!-- actually a 13:1 EXPANSION -->
-	<maxhp> 		   270.0  </maxhp>
+	<maxhp> 		   300.0  </maxhp>
 	<cycles>		     4.0  </cycles>
-	<idlerpm>		    50.0  </idlerpm>
-	<maxrpm>		  3600.0  </maxrpm>
+	<idlerpm>		   600.0  </idlerpm>
+	<maxrpm>		  3000.0  </maxrpm>
 	<sparkfaildrop>		     0.1  </sparkfaildrop> <!-- single spark motor -->
 	<volumetric-efficiency>	     1.08 </volumetric-efficiency>
-	<air-intake-impedance-factor>0.2</air-intake-impedance-factor>
+	<air-intake-impedance-factor>0.1</air-intake-impedance-factor>
 	<numboostspeeds>               3</numboostspeeds>
 	<boost-loss-factor>          0.1</boost-loss-factor>
-	<ratedboost1>         8 </ratedboost1>
+	<ratedboost1>        11 </ratedboost1>
 	<ratedpower1>       480 </ratedpower1>
 	<ratedrpm1>        4000 </ratedrpm1>
 	<ratedaltitude1>  11000 </ratedaltitude1>
-	<ratedboost2>         8 </ratedboost2>
+	<ratedboost2>        10 </ratedboost2>
 	<ratedpower2>       480 </ratedpower2>
 	<ratedrpm2>        4000 </ratedrpm2>
 	<ratedaltitude2>  22000 </ratedaltitude2>
-	<ratedboost3>         8 </ratedboost3>
+	<ratedboost3>        9.6 </ratedboost3>
 	<ratedpower3>       480 </ratedpower3>
 	<ratedrpm3>        4000 </ratedrpm3>
 	<ratedaltitude3>  33000 </ratedaltitude3>
