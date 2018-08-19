@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 
-<piston_engine name="Continental _TSIO-360-G with an owner who's put a bigger turbo on it">
-	<minmp unit="INHG">		   10.5  </minmp>
+<piston_engine name="Continental _TSIO-470 with an owner who's put a bigger turbo on it">
+	<minmp unit="INHG">		   16.5  </minmp>
 	<maxmp unit="INHG">		   26.8  </maxmp>
-	<displacement unit="IN3"> 570.0  </displacement>
+	<displacement unit="IN3"> 470.0  </displacement>
 	<stroke unit="IN">			3.875</stroke>
 	<cylinders>					8.0  </cylinders>
 	<compression-ratio>			 16.0  </compression-ratio>
