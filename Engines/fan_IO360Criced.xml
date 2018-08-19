@@ -16,15 +16,15 @@
 -->
 
 <propeller name="prop">
-  <ixx>					3.03 </ixx>
-  <diameter unit="IN"> 91.0  </diameter>
+  <ixx>					3.43 </ixx>
+  <diameter unit="IN"> 76.0  </diameter>
   <numblades>			3    </numblades>
-  <gearratio>			1</gearratio>
-  <p_factor>			4.00 </p_factor>
-  <minpitch>		   15   </minpitch>
-  <maxpitch>		   56   </maxpitch>
-  <minrpm>			 1100    </minrpm>
-  <maxrpm>			 2750    </maxrpm>
+<!--  <gearratio>			1.154</gearratio> -->
+  <p_factor>			6.00 </p_factor>
+  <minpitch>		   10    </minpitch>
+  <maxpitch>		   55    </maxpitch>
+  <minrpm>			  900    </minrpm>
+  <maxrpm>			 2800    </maxrpm>
   <constspeed>			1    </constspeed>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->

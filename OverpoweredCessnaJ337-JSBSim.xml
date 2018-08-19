@@ -562,7 +562,7 @@
       <bias>60</bias>
       <clipto>
         <min> 60 </min>
-        <max> 235 </max>
+        <max> 135 </max>
       </clipto>
       <output>metrics/Sw-sqft</output>
    </summer>
@@ -717,7 +717,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.0005 </value>
+           <value> 0.05 </value>
        </product>
     </function>
 
